@@ -1,7 +1,7 @@
 blank_issues_enabled: false
 contact_links:
   - name: See the showcase
-    url: https://hydra-engine-site.vercel.app/examples
+    url: https://www.hydrare.dev/examples
     about: Every project here, as cards on the Hydra Engine website.
   - name: Hydra Engine
     url: https://github.com/RusticStack/hydra-engine

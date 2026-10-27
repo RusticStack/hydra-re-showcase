@@ -3,7 +3,7 @@
 Projects made by reverse-engineering programs their authors own, with
 [Hydra Engine](https://github.com/RusticStack/hydra-engine) and
 [RusticRE](https://github.com/RusticStack/RusticRE). The
-[showcase on the website](https://hydra-engine-site.vercel.app/examples) reads this repository's
+[showcase on the website](https://www.hydrare.dev/examples) reads this repository's
 `index.json`, so a project merged here appears there.
 
 ## Add yours
