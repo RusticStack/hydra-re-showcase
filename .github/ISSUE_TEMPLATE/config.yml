@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: See the showcase
+    url: https://hydra-engine-site.vercel.app/examples
+    about: Every project here, as cards on the Hydra Engine website.
+  - name: Hydra Engine
+    url: https://github.com/RusticStack/hydra-engine
+    about: Questions and bugs about the engine itself go there.

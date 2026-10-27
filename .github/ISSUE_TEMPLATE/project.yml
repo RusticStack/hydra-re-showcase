@@ -1,0 +1,86 @@
+name: Add a project
+description: Something you built with Hydra Engine or RusticRE, for the showcase.
+title: "Add: "
+labels: ["new project"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Prefer a pull request? Add `projects/<your-project>/project.json` and a cover image, then run
+        `python scripts/build_index.py` (see the README). Otherwise fill this in and a maintainer adds it.
+        Only programs you own, and no code or assets from them in your project.
+  - type: input
+    id: name
+    attributes:
+      label: Project name
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Link
+      description: "A page people can open: repository, release, write-up or video."
+      placeholder: https://github.com/you/project
+    validations:
+      required: true
+  - type: input
+    id: from
+    attributes:
+      label: What you reverse-engineered
+      placeholder: a game's 1.0 build, a scanner's driver DLL, a router's firmware
+    validations:
+      required: true
+  - type: input
+    id: to
+    attributes:
+      label: What it became
+      placeholder: A Rust rewrite, a Linux driver, a mod loader
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind
+      options: [game, tool, driver, firmware, mod, research]
+    validations:
+      required: true
+  - type: textarea
+    id: text
+    attributes:
+      label: In a sentence or two
+      description: Shown on the card, in your words (20 to 280 characters).
+    validations:
+      required: true
+  - type: input
+    id: highlights
+    attributes:
+      label: Up to three highlights
+      description: Short measured facts, separated by semicolons.
+      placeholder: 10,849 functions decompiled; 772 script actions mapped
+  - type: input
+    id: stack
+    attributes:
+      label: Harnesses and tools you used
+      placeholder: Claude Code, RusticRE, Hydra Engine
+  - type: input
+    id: author
+    attributes:
+      label: Credit as
+    validations:
+      required: true
+  - type: textarea
+    id: cover
+    attributes:
+      label: Cover image
+      description: "Drag in a 1200x630 image (JPEG, PNG or WebP, at most 600 KB). Use only images you have the right to share."
+    validations:
+      required: true
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Before you submit
+      options:
+        - label: The program is one I own, and my project contains no code or assets from it.
+          required: true
+        - label: I have the right to share the cover image.
+          required: true

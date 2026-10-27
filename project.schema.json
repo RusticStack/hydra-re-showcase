@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "A showcase project",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["name", "url", "from", "to", "kind", "text", "author", "stack", "added"],
+  "properties": {
+    "name": { "type": "string", "minLength": 2, "maxLength": 60 },
+    "url": { "type": "string", "pattern": "^https://" },
+    "from": { "type": "string", "maxLength": 60, "description": "What was reverse-engineered." },
+    "to": { "type": "string", "maxLength": 60, "description": "What it became." },
+    "kind": { "enum": ["game", "tool", "driver", "firmware", "mod", "research"] },
+    "text": { "type": "string", "minLength": 20, "maxLength": 280, "description": "One or two sentences, in the author's words." },
+    "author": { "type": "string", "maxLength": 40 },
+    "authorUrl": { "type": "string", "pattern": "^https://" },
+    "stack": { "type": "array", "items": { "type": "string", "maxLength": 30 }, "maxItems": 6 },
+    "highlights": { "type": "array", "items": { "type": "string", "maxLength": 60 }, "maxItems": 3 },
+    "added": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" }
+  }
+}
