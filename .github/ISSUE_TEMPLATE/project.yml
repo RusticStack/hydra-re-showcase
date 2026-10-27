@@ -1,5 +1,5 @@
 name: Add a project
-description: Something you built with Hydra Engine or RusticRE, for the showcase.
+description: Something you built with Hydra Engine or Hydralysis, for the showcase.
 title: "Add: "
 labels: ["new project"]
 body:
@@ -61,7 +61,7 @@ body:
     id: stack
     attributes:
       label: Harnesses and tools you used
-      placeholder: Claude Code, RusticRE, Hydra Engine
+      placeholder: Claude Code, Hydralysis, Hydra Engine
   - type: input
     id: author
     attributes:

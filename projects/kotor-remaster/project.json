@@ -7,7 +7,7 @@
   "text": "A clean-room runtime that loads your own KotOR install in place, with no game assets shipped. Every internal function of the 1.0.3.0 build is decompiled and every script action mapped, as evidence for the rewrite.",
   "author": "KelpHect",
   "authorUrl": "https://github.com/KelpHect",
-  "stack": ["RusticRE", "Ghidra"],
+  "stack": ["Hydralysis", "Ghidra"],
   "highlights": ["10,849/10,849 functions decompiled", "772/772 script actions mapped", "8,428 scripts byte-identical"],
   "added": "2026-10-27"
 }

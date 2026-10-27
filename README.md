@@ -2,7 +2,7 @@
 
 Projects made by reverse-engineering programs their authors own, with
 [Hydra Engine](https://github.com/RusticStack/hydra-engine) and
-[RusticRE](https://github.com/RusticStack/RusticRE). The
+[Hydralysis](https://github.com/RusticStack/Hydralysis). The
 [showcase on the website](https://www.hydrare.dev/examples) reads this repository's
 `index.json`, so a project merged here appears there.
 
@@ -21,7 +21,7 @@ Projects made by reverse-engineering programs their authors own, with
     "kind": "game",
     "text": "One or two sentences, in your words, shown on the card.",
     "author": "you",
-    "stack": ["Claude Code", "RusticRE"],
+    "stack": ["Claude Code", "Hydralysis"],
     "highlights": ["a measured fact", "another"],
     "added": "2026-10-27"
   }
